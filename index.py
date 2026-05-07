@@ -6,8 +6,8 @@ plt.rcParams['figure.figsize']=(10,8)
 #dados
 def getLinear(x,w,b=0,noiseS=0):
     return w*x+b+ noiseS* np.random.randn(x.shape[0])
-x=np.arange(-10,30.1,2)
-Y=getLinear(x,1.94,30, noiseS=0)
+x=np.arange(-50,50,3)
+Y=getLinear(x*10,-8746,200000000000000, noiseS=0)
 plt.scatter(x,Y)
 plt.xlabel('ºC', fontsize=10)
 plt.ylabel('ºF', fontsize=10)
